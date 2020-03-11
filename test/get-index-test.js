@@ -22,7 +22,7 @@ test('get /', async t => {
 test('@begin/data', async t => {
   // tests that @begin/data can write data
   let tmp = await data.set({table: 'tmp'})
-  t.is(tmp.table, 'tmp')
+  t.is(tmp.table, 'tmp11')
 
   // tests that @begin/data can read data
   let result = await data.get({table: 'tmp'})
